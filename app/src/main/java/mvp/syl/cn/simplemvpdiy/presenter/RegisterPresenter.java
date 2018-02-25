@@ -15,7 +15,7 @@ import rx.schedulers.Schedulers;
  */
 public class RegisterPresenter extends BasePresenter<IRegisterView> {
 
-    //重新构前:
+    //1重构前:  Before the refactoring
     public void register(String mobole, String vertifyCode,String password){
 
         UserService userService = new UserServiceImpl();
@@ -44,7 +44,7 @@ public class RegisterPresenter extends BasePresenter<IRegisterView> {
 
     }
 
-
+ //2 use BaseSubsriber
     public void register1(String mobole, String vertifyCode,String password){
 
         UserService userService = new UserServiceImpl();
@@ -60,6 +60,7 @@ public class RegisterPresenter extends BasePresenter<IRegisterView> {
 
     }
 
+    //use
     public void register2(String mobole, String vertifyCode,String password){
 
         UserService userService = new UserServiceImpl();

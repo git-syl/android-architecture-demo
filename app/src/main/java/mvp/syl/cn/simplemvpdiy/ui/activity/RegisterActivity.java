@@ -17,6 +17,7 @@ public class RegisterActivity extends BaseMvpActivity<RegisterPresenter> impleme
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //todo: dagger2
         mPresenter = new RegisterPresenter();
         mPresenter.mView = this;
 
