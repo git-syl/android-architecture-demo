@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="mvp.syl.cn.simplemvpdiy.ui.activity.RegisterActivity">
+    tools:context="cn.cn.syl.register.register.syl.register.ui.activity.RegisterActivity">
 
     <TextView
         android:layout_width="wrap_content"

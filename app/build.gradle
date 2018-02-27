@@ -31,4 +31,11 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
     api 'io.reactivex:rxjava:1.0.14'
     api 'io.reactivex:rxandroid:1.0.1'
+
+    //Retrofit
+    api "com.squareup.okhttp3:okhttp:${ok_http_version}"
+    api "com.squareup.retrofit2:retrofit:${retrofit_version}"
+    api "com.squareup.okhttp3:logging-interceptor:${ok_http_version}"
+    api "com.squareup.retrofit2:converter-gson:${retrofit_version}"
+    api "com.squareup.retrofit2:adapter-rxjava:${retrofit_version}"
 }
