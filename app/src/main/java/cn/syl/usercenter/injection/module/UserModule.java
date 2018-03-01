@@ -15,4 +15,9 @@ public class UserModule {
     UserService providesUserService(){
         return new UserServiceImpl();
     }
+
+//    @Provides
+//    UserService providesUserService(UserServiceImpl userServiceImpl){
+//        return userServiceImpl;
+//    }
 }
