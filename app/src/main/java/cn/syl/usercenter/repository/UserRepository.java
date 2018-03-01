@@ -1,9 +1,9 @@
-package cn.syl.register.repository;
+package cn.syl.usercenter.repository;
 
 import cn.syl.base.data.net.RetrofitFactory;
 import cn.syl.base.data.protocol.BaseResponse;
-import cn.syl.register.data.api.UserApi;
-import cn.syl.register.data.protocol.RegisterResponse;
+import cn.syl.usercenter.data.api.UserApi;
+import cn.syl.usercenter.data.protocol.RegisterResponse;
 import rx.Observable;
 
 /**

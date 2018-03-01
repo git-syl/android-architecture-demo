@@ -1,4 +1,4 @@
-package cn.syl.register.service;
+package cn.syl.usercenter.service;
 
 import rx.Observable;
 

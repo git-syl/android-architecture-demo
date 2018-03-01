@@ -1,4 +1,4 @@
-package cn.syl.register.data.protocol;
+package cn.syl.usercenter.data.protocol;
 
 /**
  * @author: syl  Date: 2018/2/26  Email:nerosyl@live.com

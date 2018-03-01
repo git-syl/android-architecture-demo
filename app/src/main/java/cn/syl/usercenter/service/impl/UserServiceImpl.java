@@ -1,9 +1,9 @@
-package cn.syl.register.service.impl;
+package cn.syl.usercenter.service.impl;
 
 import cn.syl.base.data.protocol.BaseResponse;
 import cn.syl.base.rx.BaseException;
-import cn.syl.register.repository.UserRepository;
-import cn.syl.register.service.UserService;
+import cn.syl.usercenter.repository.UserRepository;
+import cn.syl.usercenter.service.UserService;
 import rx.Observable;
 import rx.functions.Func1;
 

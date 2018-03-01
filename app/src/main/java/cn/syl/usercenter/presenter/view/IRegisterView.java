@@ -1,4 +1,4 @@
-package cn.syl.register.presenter.view;
+package cn.syl.usercenter.presenter.view;
 
 import cn.syl.base.presenter.view.IBaseView;
 

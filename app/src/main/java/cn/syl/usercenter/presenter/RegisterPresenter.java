@@ -1,10 +1,12 @@
-package cn.syl.register.presenter;
+package cn.syl.usercenter.presenter;
+
+import javax.inject.Inject;
 
 import cn.syl.base.presenter.BasePresenter;
 import cn.syl.base.rx.BaseSubsriber;
-import cn.syl.register.presenter.view.IRegisterView;
-import cn.syl.register.service.UserService;
-import cn.syl.register.service.impl.UserServiceImpl;
+import cn.syl.usercenter.presenter.view.IRegisterView;
+import cn.syl.usercenter.service.UserService;
+import cn.syl.usercenter.service.impl.UserServiceImpl;
 import cn.syl.base.rx.utils.ThreadUtils;
 import rx.Observer;
 import rx.android.schedulers.AndroidSchedulers;
@@ -14,6 +16,13 @@ import rx.schedulers.Schedulers;
  * @author: syl  Date: 2018/2/25  Email:nerosyl@live.com
  */
 public class RegisterPresenter extends BasePresenter<IRegisterView> {
+
+    @Inject
+    UserService userService ;
+
+    @Inject
+    public RegisterPresenter() {
+    }
 
     //1重构前:  Before the refactoring
     public void register(String mobole, String vertifyCode,String password){
@@ -63,7 +72,7 @@ public class RegisterPresenter extends BasePresenter<IRegisterView> {
     //use
     public void register2(String mobole, String vertifyCode,String password){
 
-        UserService userService = new UserServiceImpl();
+     //   UserService userService = new UserServiceImpl();
 
         ThreadUtils.fromIoToMain(userService.register(mobole,vertifyCode,password))
                 .subscribe(new BaseSubsriber<Boolean>(){

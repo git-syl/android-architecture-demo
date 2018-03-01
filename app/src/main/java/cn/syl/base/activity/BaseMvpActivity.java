@@ -1,5 +1,7 @@
 package cn.syl.base.activity;
 
+import javax.inject.Inject;
+
 import cn.syl.base.presenter.BasePresenter;
 import cn.syl.base.presenter.view.IBaseView;
 
@@ -22,5 +24,6 @@ public class BaseMvpActivity<T extends BasePresenter> extends BaseActivity imple
     public void onError() {
     }
 
-  protected   T mPresenter;
+    @Inject
+    protected T mPresenter;
 }
